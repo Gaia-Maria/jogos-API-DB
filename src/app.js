@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const mongoose = require('./database/mongooseConnect')
 const consolesRoutes = require('./routes/consolesRoutes')
-//const gamesRoutes = require('./models/gamesRoutes')
+const gamesRoutes = require('./routes/gamesRoutes')
 
 const app = express()
 
@@ -11,5 +11,6 @@ app.use(cors())
 mongoose.connect()
 
 app.use(consolesRoutes)
+app.use(gamesRoutes)
 
 module.exports = app
