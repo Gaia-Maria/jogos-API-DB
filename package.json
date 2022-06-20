@@ -1,0 +1,29 @@
+{
+  "name": "jogos-api-db",
+  "version": "1.0.0",
+  "description": "Testando aprendizados com um banco de dados de jogos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaia-Maria/jogos-API-DB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaia-Maria/jogos-API-DB/issues"
+  },
+  "homepage": "https://github.com/Gaia-Maria/jogos-API-DB#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
