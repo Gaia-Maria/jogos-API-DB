@@ -46,7 +46,7 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelecimento
    |    |- 📄 app.js
    | 
    |    |- 📁 database  
-   |         |- 📄 moogoseConnect.js  
+   |         |- 📄 mongooseConnect.js  
    |
    |    |- 📁 controllers  
    |         |- 📄 consolesController.js  
