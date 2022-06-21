@@ -9,7 +9,7 @@ Testando aprendizados da Semana 9 a 13 (CRUD, API e MongoDB) de Todas em Tech {*
 
 ## 🏳️‍🌈Sobre mim:
 
-Olá, meu nome é Gaia Maria. Sou uma travesti graduada em História Licenciatura (UNESP), estudante de Back-end (Reprograma) e graduanda em Analise e Desenvolvimento de Sistema (Faculdade Descomplica). Estou em transição de carreira e aqui, em meu perfil do GitHub ou em meu LinkedIn, você podera acompanhar meu desenvolvimento. 
+Olá, meu nome é Gaia Maria. Sou uma travesti graduada em História Licenciatura (UNESP), estudante de Back-end (Reprograma) e graduanda em Análise e Desenvolvimento de Sistemas (Faculdade Descomplica). Estou em transição de carreira e aqui, em meu perfil do GitHub ou em meu LinkedIn, você podera acompanhar meu desenvolvimento. 
 
 Agradeço desde ja a sua atenção.  
 
@@ -18,7 +18,7 @@ Seja muito bem-vinde ✨
 
 
 ## 👩‍💻 Sobre o Projeto: 
-Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelcimento comercial destinado ao uso de maquinas ou consoles de jogos com o intuito de criar um ambiente voltado exclusivamente para jogos. O projeto objetiva uma criação de uma base onde se possa cadastrar novos consoles e os games/jogos atribuidos a eles.
+Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelecimento comercial destinado ao uso de máquinas ou consoles de jogos com o intuito de criar um ambiente voltado exclusivamente para jogos. O projeto objetiva uma criação de uma base onde se possa cadastrar novos consoles e os games/jogos atribuidos a eles.
 <br>
 <br>
 
