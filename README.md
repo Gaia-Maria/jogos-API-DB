@@ -2,7 +2,7 @@
 Testando aprendizados da Semana 9 a 13 (CRUD, API e MongoDB) de Todas em Tech {**Reprograma**}. Projeto CRUD com MongoDB com um banco de dados de consoles e jogos. 
 
 <p align="center">
-  <img src="https://shiggyisntcrustysmh.carrd.co/assets/images/image01.gif?v=2610a86f" width= "600" height="200"/>
+  <img src="https://shiggyisntcrustysmh.carrd.co/assets/images/image01.gif?v=2610a86f" width= "599" height="336"/>
 </p>
 
 <br>
@@ -14,8 +14,6 @@ Olá, meu nome é Gaia Maria. Sou uma travesti graduada em História Licenciatur
 Agradeço desde ja a sua atenção.  
 
 Seja muito bem-vinde ✨
-
-<br>
 <br>
 
 
@@ -193,7 +191,9 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelcimento 
   <img src="https://media3.giphy.com/media/JUSwkiO1Eh5K43ruN0/giphy.gif" width= "400" height="200"/>
 </p>
 
- <p align="center"> Para recomeçar clique em 'START'<div id="voltarTopo"><a href="#" id="subir"> <p align="center"> 🕹️START 🕹️</a>
+<br>
+
+ <p align="center"> Para recomeçar clique em 'START'<div id="voltarTopo"><a href="#" id="subir"> <p align="center"> <img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/26b0d9a666ff2f4.png" width= "150" height="100" /></a>
 </div> 
 
 
