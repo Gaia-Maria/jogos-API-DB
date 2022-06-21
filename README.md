@@ -2,19 +2,19 @@
 Testando aprendizados da Semana 9 a 13 (CRUD, API e MongoDB) de Todas em Tech {**Reprograma**}. Projeto CRUD com MongoDB com um banco de dados de consoles e jogos. 
 
 <p align="center">
-  <img src="https://shiggyisntcrustysmh.carrd.co/assets/images/image01.gif?v=2610a86f" width= "600" height="180"/>
+  <img src="https://shiggyisntcrustysmh.carrd.co/assets/images/image01.gif?v=2610a86f" width= "600" height="200"/>
 </p>
 
 <br>
 
 ## 🏳️‍🌈Sobre mim:
-````
+
 Olá, meu nome é Gaia Maria. Sou uma travesti graduada em História Licenciatura (UNESP), estudante de Back-end (Reprograma) e graduanda em Analise e Desenvolvimento de Sistema (Faculdade Descomplica). Estou em transição de carreira e aqui, em meu perfil do GitHub ou em meu LinkedIn, você podera acompanhar meu desenvolvimento. 
 
 Agradeço desde ja a sua atenção.  
 
 Seja muito bem-vinde ✨
-````
+
 <br>
 <br>
 
@@ -73,15 +73,15 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelcimento 
 
 ## 🌐Dados para Collection Consoles
 
-- _id: autogerado e obrigatório
-- name: texto e obrigatório (*unico*)
-- developer: texto e obrigatorio
-- releaseData: number e obrigatorio
-- display: array, texto e obrigatorio
-- storageCapacities: array, texto e obrigatorio
-- numberOfPlayers: array numerico e obrigatorio
-- available: boolean e obrigatorio
-- description: texto e opcional
+- **_id**: autogerado e obrigatório
+- **name**: texto e obrigatório (*unico*)
+- **developer**: texto e obrigatorio
+- **releaseData**: number e obrigatorio
+- **display**: array, texto e obrigatorio
+- **storageCapacities**: array, texto e obrigatorio
+- **numberOfPlayers**: array numerico e obrigatorio
+- **available**: boolean e obrigatorio
+- **description**: texto e opcional
   
  <br>
 
@@ -97,7 +97,7 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelcimento 
     "storageCapacities":["500GB","1TB","2TB"],
     "numberOfPlayers":[{"1","2","3","4"}],
     "available":true,
-    "description":"The PlayStation 4 (PS4) is a home video game console developed by Sony Computer Entertainment. Announced as the successor to the PlayStation 3 in February 2013, it was launched on November 15, 2013, in North America."
+    "description":"The PlayStation 4 (PS4) is a home video game console developed by Sony Computer..."
      __v: 0
 },
 
@@ -110,7 +110,7 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelcimento 
     "storageCapacities":["500GB","1TB"],
     "numberOfPlayers":["1","2","3","4"],
     "available":true,
-    "description":"The Xbox One is a home video game console developed by Microsoft. Announced in May 2013, it is the successor to Xbox 360 and the third base console in the Xbox series of video game consoles."
+    "description":"The Xbox One is a home video game console developed by Microsoft..."
      __v: 0
 },
 {
@@ -122,25 +122,25 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelcimento 
     "storageCapacities":["34GB","64TB"],
     "numberOfPlayers":["1","2"],
     "available":false,
-    "description":"The Nintendo Switch is a video game console      developed by Nintendo and released worldwide in most regions on March 3, 2017. The console itself is a tablet that can either be docked for use as a home console or used as a portable device, making it a hybrid console."
+    "description":"The Nintendo Switch is a video game console developed by Nintendo..."
      __v: 0
   }
 ]
 ```
 <br>
- <br>
+<br>
 
 
 ## 🌐 Dados para Collection Games
-- _id: autogerado e obrigatório
-- name: texto e obrigatório (*unico*)
-- developer: texto e obrigatorio
-- releaseData: number e obrigatorio
-- genre: array, texto e obrigatorio
-- mode: array, texto e obrigatorio
-- available: boolean e obrigatorio
-- description: texto e opcional
-- idConsole: id do console e obrigatorio
+- **_id**: autogerado e obrigatório
+- **name**: texto e obrigatório (*unico*)
+- **developer**: texto e obrigatorio
+- **releaseData**: number e obrigatorio
+- **genre**: array, texto e obrigatorio
+- **mode**: array, texto e obrigatorio
+- **available**: boolean e obrigatorio
+- **description**: texto e opcional
+- **idConsole**: id do console e obrigatorio
   
 <br>
 
@@ -155,7 +155,7 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelcimento 
     "genre": ["Action-adventure","hack and slash"],
     "mode": ["Single-player"],
     "available": true,
-    "description": "While the first seven games were loosely based on Greek mythology, this episode is loosely inspired by Norse mythology, taking place several centuries after God of War III (2010). Six of the nine realms of Norse mythology can be explored. Predating the Vikings, most of the game takes place in ancient Scandinavia in the realm of Midgard, which is inhabited by humans and other creatures.",
+    "description": "While the first seven games were loosely based on Greek mythology...",
     "console": new ObjectId(62b0c3860a5912f473d73c0f)"
      __v: 0
   },
@@ -167,7 +167,7 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelcimento 
     "genre": ["First-person","shooter"],
     "mode": ["Single-player","multiplayer"],
     "available": true,
-    "description": "Halo: The Master Chief Collection is a compilation of first-person shooter video games in the Halo series, originally released in November 2014 for the Xbox One, and later on Microsoft Windows through 2019 and 2020.",
+    "description": "Is a compilation of first-person shooter video games...",
     "console": new ObjectId("62b0c4860a5912f473d73c11"),
   },
   {
@@ -178,7 +178,7 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelcimento 
     "genre": ["Action role-playing"],
     "mode": ["Single-player"],
     "available": true,
-    "description": "Pokémon Legends: Arceus is a 2022 action role-playing game developed by Game Freak and published by Nintendo and The Pokémon Company for the Nintendo Switch. ",
+    "description": "Arceus is a 2022 action role-playing game developed by Game Freak...",
     "console": new ObjectId("62b0c6110a5912f473d73c13"),
   }
 ]
