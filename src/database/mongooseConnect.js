@@ -1,18 +1,19 @@
-const DATABASE_URI = "mongodb+srv://GaiaMaria8:gaga1999@cluster0.btpmh.mongodb.net/fliperama"
+const DATABASE_URI =
+  "mongodb+srv://GaiaMaria8:<password>@cluster0.btpmh.mongodb.net/fliperama";
 
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const connect = async() => {
-    try{
-        mongoose.connect(DATABASE_URI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
-        console.log('Database connection successful.')
-    }catch(error){
-        console.error(error);
-    }
-}
+const connect = async () => {
+  try {
+    mongoose.connect(DATABASE_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Database connection successful.");
+  } catch (error) {
+    console.error(error);
+  }
+};
 module.exports = {
-    connect
-}
+  connect,
+};

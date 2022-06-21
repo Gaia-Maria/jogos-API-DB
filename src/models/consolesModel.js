@@ -1,44 +1,45 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const consoleSchema = mongoose.Schema({
-
-    _id:{
-        type: mongoose.Schema.Types.ObjectId,
-        default: mongoose.Types.ObjectId
+const consoleSchema = mongoose.Schema(
+  {
+    _id: {
+      type: mongoose.Schema.Types.ObjectId,
+      default: mongoose.Types.ObjectId,
     },
     name: {
-        type: String,
-        required: true,
-        unique: true,
+      type: String,
+      required: true,
+      unique: true,
     },
     developer: {
-        type: String,
-        required: true,
+      type: String,
+      required: true,
     },
     releaseData: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true,
     },
-    display:{
-        type: [String],
-        required: true,
+    display: {
+      type: [String],
+      required: true,
     },
     storageCapacities: {
-        type: [String],
-        required: true,
+      type: [String],
+      required: true,
     },
     numberOfPlayers: {
-        type: [Number],
-        required: true
+      type: [Number],
+      required: true,
     },
-    available: { 
-        type: Boolean,
-        required: true,
+    available: {
+      type: Boolean,
+      required: true,
     },
     description: String,
+  },
+  { timestamp: true }
+);
 
-}, {timestamp: true})
+const Model = mongoose.model("Console", consoleSchema);
 
-const Model = mongoose.model('Console', consoleSchema)
-
-module.exports = Model
+module.exports = Model;

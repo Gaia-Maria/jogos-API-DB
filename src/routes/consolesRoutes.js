@@ -1,5 +1,5 @@
-const controller = require('../controller/consolesController');
-const express = require('express');
+const controller = require("../controller/consolesController");
+const express = require("express");
 
 const router = express.Router();
 
@@ -8,8 +8,8 @@ router.get("/consoles", controller.findAllConsoles);
 router.get("/consoles/:id", controller.findConsoleById);
 //post
 router.post("/consoles/add", controller.addNewConsole);
-router.patch("/consoles/:id", controller.updateConsole)
+router.patch("/consoles/:id", controller.updateConsole);
 //delete
-router.delete("/consoles/:id", controller.deleteConsole)
+router.delete("/consoles/:id", controller.deleteConsole);
 
-module.exports = router
+module.exports = router;
