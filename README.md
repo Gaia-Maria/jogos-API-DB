@@ -1,5 +1,5 @@
 # FLIPERAMA 🎮
-Testando aprendizados da Semana 9 a 13 (CRUD, API e MongoDB) de Todas em Tech {**Reprograma**}. Projeto CRUD com MongoDB com um banco de dados de consoles e jogos. 
+Testando aprendizados referentes as semanas 8 a 13 (CRUD, API e MongoDB) de Todas em Tech {**Reprograma**}. Projeto paralelo utilizando API com CRUD e MongoDB. 
 
 <p align="center">
   <img src="https://shiggyisntcrustysmh.carrd.co/assets/images/image01.gif?v=2610a86f" width= "599" height="336"/>
@@ -43,8 +43,7 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelecimento
    📁 jogos-API-DB  
    |  
    |-  📁 src    
-   |    |- 📄 app.js
-   | 
+   |    |
    |    |- 📁 database  
    |         |- 📄 mongooseConnect.js  
    |
@@ -59,7 +58,10 @@ Um **fliperama**, tambem conhecido como *Salão de Jogos*, é um estabelecimento
    |    |- 📁 routes  
    |         |- 📄 consolesRoutes.js   
    |         |- 📄 gamesRoutes.js     
-   |  
+   |    |- 📄 app.js
+   |
+   |- 📄 .env
+   |- 📄 .env.example
    |- 📄 .gitignore  
    |- 📄 package-lock.json  
    |- 📄 pakage.json  
