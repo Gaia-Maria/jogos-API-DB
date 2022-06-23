@@ -7,7 +7,7 @@ const findAllGames = async (req, res) => {
     res.status(200).json(allGames);
   } catch {
     res.status(500).json({ message: error.message });
-  }
+  };
 };
 
 const findGameById = async (req, res) => {
@@ -21,7 +21,7 @@ const findGameById = async (req, res) => {
     res.status(200).json(findGame);
   } catch (error) {
     res.status(500).json({ message: error.message });
-  }
+  };
 };
 
 const addNewGame = async (req, res) => {
@@ -41,13 +41,13 @@ const addNewGame = async (req, res) => {
       return res
         .status(400)
         .json({ message: "Required: Enter the Console id." });
-    }
+    };
 
     const findConsole = await ConsolesModel.findById(consoleId);
 
     if (!findConsole) {
       return res.status(404).json({ message: "Console not found" });
-    }
+    };
 
     const newGame = new GamesModel({
       console: consoleId,
@@ -66,7 +66,7 @@ const addNewGame = async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: error.message });
-  }
+  };
 };
 
 const updateGame = async (req, res) => {
@@ -85,15 +85,15 @@ const updateGame = async (req, res) => {
     const findGame = await GamesModel.findById(id);
     if (findGame == null) {
       res.status(404).json({ message: "Game not found" });
-    }
+    };
 
     if (consoleId) {
       const findConsole = await ConsolesModel.findById(consoleId);
 
       if (findConsole == null) {
         return res.status(404).json({ message: "Console not found" });
-      }
-    }
+      };
+    };
     findGame.name = name || findGame.name;
     findGame.developer = developer || findGame.developer;
     findGame.releaseData = releaseData || findGame.releaseData;
@@ -107,19 +107,22 @@ const updateGame = async (req, res) => {
     res.status(200).json({ message: "Game successfully updated", savedGame });
   } catch (error) {
     res.status(500).json({ message: error.message });
-  }
+  };
 };
 
 const deleteGame = async (req, res) => {
   try {
     const { id } = req.params;
-    await GamesModel.findByIdAndDelete(id).populate("console");
-    const message = `Game with id ${id} was successfully deleted`;
-    res.status(200).json({ message });
-  } catch {
-    console.error(error);
+    const findGames = await GamesModel.findById(id);
+
+    if (findGames == null) {
+      return res.status(404).json({ message: `Game with id ${id} not found` })
+    };
+    await findGames.remove();
+    res.status(200).json({ message: `Game with id ${id} was successfully deleted` });
+  } catch (error) {
     res.status(500).json({ message: error.message });
-  }
+  };
 };
 
 module.exports = {

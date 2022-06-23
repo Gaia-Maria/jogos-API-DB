@@ -1,3 +1,5 @@
 const app = require("./src/app");
 
-app.listen(6666, () => console.log(`Listening on port 6666`));
+const DB_PORT = process.env.DB_PORT;
+
+app.listen(DB_PORT, () => console.log(`Listening on port: ${DB_PORT}`));

@@ -7,7 +7,7 @@ const findAllConsoles = async (req, res) => {
   } catch {
     console.log(error);
     res.status(500).json({ message: error.message });
-  }
+  };
 };
 
 const findConsoleById = async (req, res) => {
@@ -17,7 +17,7 @@ const findConsoleById = async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: error.message });
-  }
+  };
 };
 
 const addNewConsole = async (req, res) => {
@@ -45,13 +45,11 @@ const addNewConsole = async (req, res) => {
 
     const savedConsole = await newConsole.save();
 
-    res
-      .status(201)
-      .json({ message: "New console successfully added", savedConsole });
+    res.status(201).json({ message: "New console successfully added", savedConsole });
   } catch (error) {
     console.error(error);
     res.status(500).json(error.message);
-  }
+  };
 };
 
 const updateConsole = async (req, res) => {
@@ -77,25 +75,23 @@ const updateConsole = async (req, res) => {
       description,
     });
 
-    res
-      .status(200)
-      .json({ message: "Console successfully updated", updateConsole });
+    res.status(200).json({ message: "Console successfully updated", updateConsole });
   } catch {
     console.error(error);
     res.status(500).json({ message: error.message });
-  }
+  };
 };
 
 const deleteConsole = async (req, res) => {
   try {
     const { id } = req.params;
-    await ConsolesModel.findByIdAndDelete(id);
-    const message = `Console with id ${id} was successfully deleted`;
+    const deleteConsole = await ConsolesModel.findByIdAndDelete(id);
+    const message = `Console with id ${deleteConsole.name} was successfully deleted`;
     res.status(200).json({ message });
-  } catch {
+  } catch (error){
     console.error(error);
     res.status(500).json({ message: error.message });
-  }
+  };
 };
 
 module.exports = {
